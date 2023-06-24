@@ -1,8 +1,13 @@
+# Guide
+
 ## 1.- Spark is developed in which language?
 
 Python
+
 R
+
 Java
+
 **Scala**
 
 **Spark is developed primarily in Scala. Scala is a programming language that runs on the Java Virtual Machine (JVM) and provides a concise and expressive syntax. While Spark supports multiple programming languages, including Python, R, and Java, its core implementation is in Scala.** 
@@ -10,8 +15,11 @@ Java
 ## 2.- In Spark Streaming the data can be from what all sources?
 
 Kafka
+
 Flume
+
 Kinesis
+
 **All of the Above**
 
 **In Spark Streaming, data can be ingested from various sources, including Kafka, Flume, and Kinesis. Spark Streaming provides built-in connectors or receivers for these popular streaming platforms, making it easier to consume data from them. Therefore, the correct answer is "All of the Above." Spark Streaming offers flexibility and interoperability with multiple data sources to accommodate different streaming data ingestion requirements.**
@@ -20,8 +28,11 @@ Kinesis
 ## 3.- Apache Spark has API’s in
 
 Java
+
 Scala
+
 Python
+
 **All of the above**
 
 **Apache Spark provides APIs in Java, Scala, and Python. These three languages are supported by Spark, allowing developers to choose their preferred language for interacting with Spark's functionality and building Spark applications. The Spark APIs are designed to provide a consistent experience across these languages, enabling developers to leverage the power of Spark using the programming language they are most comfortable with. Therefore, the correct answer is "All of the above."**
@@ -29,9 +40,13 @@ Python
 ## 4.- Which of the following is not a component of Spark Ecosystem?
 
 **Sqoop**
+
 GraphX
+
 MLlib
+
 BlinkDB
+
 
 **Among the options provided, Sqoop is not a component of the Spark ecosystem. Sqoop is actually a tool developed by Apache for efficiently transferring bulk data between Apache Hadoop and structured data stores such as relational databases. On the other hand, GraphX, MLlib, and BlinkDB are all components of the Spark ecosystem.**
 
@@ -43,9 +58,13 @@ BlinkDB
 ## 5.- The basic abstraction of Spark Streaming is
 
 **Dstream**
+
 RDD
+
 Shared Variable
+
 None of the above
+
 
 **The basic abstraction of Spark Streaming is DStream (Discretized Stream). DStream represents a continuous stream of data in Spark Streaming. It is a sequence of RDDs (Resilient Distributed Datasets), where each RDD contains data from a specific interval of time.**
 
@@ -64,9 +83,13 @@ None of the above
 ## 6.- Which of the following algorithm is not present in MLlib?
 
 Streaming Linear Regression
+
 Streaming KMeans
+
 **Tanimoto distance**
+
 None of the above
+
 
 **Among the given options, the algorithm that is not present in MLlib (Spark's machine learning library) is Tanimoto distance.**
 
@@ -80,9 +103,14 @@ None of the above
 ## 7.-  Dstream internally is
 
 **Continuous Stream of RDD**
+
 Continuous Stream of DataFrame
+
 Continuous Stream of DataSet
+
 None of the above
+
+
 
 **DStream internally represents a continuous stream of RDDs (Resilient Distributed Datasets). Therefore, the correct answer is "Continuous Stream of RDD." DStream is a fundamental abstraction in Spark Streaming, and it provides a high-level programming interface for processing and manipulating streaming data. It allows developers to apply transformations and actions on the stream of RDDs, enabling real-time data processing and analytics in Spark Streaming.**
 
@@ -90,7 +118,9 @@ None of the above
 ## 8.- Can we add or setup new string computation after SparkContext starts
 
 Yes
+
 **No**
+
 
 **No, we cannot add or set up new string computation after the SparkContext starts.**
 
@@ -104,8 +134,11 @@ Yes
 ## 10.- Which is the abstraction of Apache Spark?
 
 Shared Variable
+
 **RDD**
+
 Both the above
+
 
 **The abstraction of Apache Spark is the Resilient Distributed Dataset (RDD). RDD is a fundamental data structure in Spark that represents an immutable distributed collection of objects. RDDs provide a fault-tolerant and efficient way to perform distributed data processing tasks across a cluster of machines.**
 
@@ -119,9 +152,13 @@ Both the above
 ## 11.- What are the parameters defined to specify window operation
 
 **Window length, sliding interval**
+
 State size, window length
+
 State size, sliding interval
+
 None of the above
+
 
 **The parameters defined to specify a window operation in Apache Spark are the window length and the sliding interval.**
 
@@ -137,9 +174,13 @@ None of the above
 ## 12.- Which of the following is not output operation on DStream
 
 SaveAsTextFiles
+
 ForeachRDD
+
 SaveAsHadoopFiles
+
 **ReduceByKeyAndWindow**
+
 
 **Among the given options, "ReduceByKeyAndWindow" is not an output operation on DStream.**
 
@@ -158,9 +199,13 @@ SaveAsHadoopFiles
 ## 13.-  Dataset was introduced in which Spark release?
 
 **Spark 1.6**
+
 Spark 1.4.0
+
 Spark 2.1.0
+
 Spark 1.1
+
 
 **The Dataset API was introduced in Spark 1.6. It was a significant addition to Spark, providing a higher-level abstraction than RDDs (Resilient Distributed Datasets) while offering strong typing and optimization benefits.**
 
@@ -169,8 +214,11 @@ Spark 1.1
 ## 14.- Which Cluster Manager do Spark Support?
 
 Standalone Cluster Manager
+
 MESOS
+
 YARN
+
 **All of the above**
 
 **Spark supports all of the mentioned cluster managers: Standalone Cluster Manager, Mesos, and YARN.**
@@ -184,9 +232,13 @@ YARN
 ## 15.- The default storage level of cache() is?
 
 **MEMORY_ONLY**
+
 MEMORY_AND_DISK
+
 DISK_ONLY
+
 MEMORY_ONLY_SER
+
 
 **The default storage level of the cache() operation in Apache Spark is MEMORY_ONLY.**
 
@@ -201,25 +253,37 @@ MEMORY_ONLY_SER
 ## 16.- Which is not a component on the top of Spark Core?
 
 **Spark RDD**
+
 Spark Streaming
+
 MLlib
+
 None of the above
+
 
 17.- Apache Spark was made open-source in which year?
 
 **2010**
+
 2011
+
 2008
+
 2009
+
 
 **Apache Spark was made open-source in the year 2010.**
 
 ## 18.- In addition to stream processing jobs, what all functionality do Spark provides?
 
 Machine learning
+
 Graph processing
+
 Batch processing
+
 **All of the above**
+
 
 **All of the above functionalities are provided by Spark in addition to stream processing jobs.**
 
@@ -234,6 +298,7 @@ Batch processing
 ## 19.-  Is Spark included in every major distribution of Hadoop?
 
 Yes
+
 **No**
 
 **No, Spark is not included in every major distribution of Hadoop by default. While Spark can be integrated with Hadoop and run on top of Hadoop clusters, it is not a mandatory component of every Hadoop distribution.**
@@ -247,9 +312,13 @@ Yes
 ## 20.- Which of the following is not true for Hadoop and Spark?
 
 Both are data processing platforms
+
 Both are cluster computing environments
+
 **Both have their own file system**
+
 Both use open source APIs to link between different tools
+
 
 **The statement "Both have their own file system" is not true for Hadoop and Spark.**
 
@@ -267,9 +336,13 @@ Both use open source APIs to link between different tools
 ## 21.- How much faster can Apache Spark potentially run batch-processing programs when processed in memory than MapReduce can?
 
 10 times faster
+
 20 times faster
+
 **100 times faster**
+
 200 times faster
+
 
 **Apache Spark can potentially run batch-processing programs much faster in memory compared to MapReduce. While the actual performance gain depends on various factors, Spark is generally known to be significantly faster than MapReduce for in-memory processing.**
 
@@ -283,8 +356,11 @@ Both use open source APIs to link between different tools
 ## 22.-  Which of the following provide the Spark Core’s fast scheduling capability to perform streaming analytics.
 
 RDD
+
 GraphX
+
 **Spark Streaming**
+
 Spark R
 
 **Spark Streaming provides the fast scheduling capability to perform streaming analytics using Spark Core. It is an extension of Spark Core specifically designed for processing and analyzing real-time streaming data.**
@@ -300,7 +376,9 @@ Spark R
 ## 23.- Which of the following is the reason for Spark being Speedy than MapReduce?
 
 Support for different language APIs like Scala, Java, Python and R
+
 RDDs are immutable and fault-tolerant
+
 **None of the above**
 
 **The correct answer is "None of the above."**
@@ -318,6 +396,7 @@ RDDs are immutable and fault-tolerant
 ## 24.- Can you combine the libraries of Apache Spark into the same Application, for example, MLlib, GraphX, SQL and DataFrames etc.
 
 **Yes**
+
 No
 
 **Yes, you can combine multiple libraries of Apache Spark into the same application. Spark is designed to be a unified analytics engine, providing various libraries and APIs that can be used together in a single application.**
@@ -330,9 +409,13 @@ No
 ## 25.- Which of the following is true for RDD?
 
 RDD is programming paradigm
+
 **RDD in Apache Spark is an immutable collection of objects**
+
 It is database
+
 None of the above
+
 
 **The statement "RDD in Apache Spark is an immutable collection of objects" is true for RDD (Resilient Distributed Dataset).**
 
@@ -346,9 +429,13 @@ None of the above
 ## 26.-  Which of the following is not a function of Spark Context in Apache Spark?
 
 **Entry point to Spark SQL**
+
 To Access various services
+
 To set the configuration
+
 To get the current status of Spark Application
+
 
 **The function "Entry point to Spark SQL" is not a direct function of Spark Context in Apache Spark.**
 
@@ -419,9 +506,13 @@ sc.stop()
 ## 27.-  What are the features of Spark RDD?
 
 In-memory computation
+
 Lazy evaluations
+
 Fault Tolerance
+
 **All of the above**
+
 
 **All of the above options are features of Spark RDD (Resilient Distributed Dataset).**
 
@@ -436,9 +527,13 @@ Fault Tolerance
 ## 28.- How many Spark Context can be active per JVM?
 
 More than one
+
 **Only one**
+
 Not specific
+
 None of the above
+
 
 **In Apache Spark, *only one SparkContext can be active per JVM*. Attempting to create multiple SparkContext instances in the same JVM can lead to conflicts and unexpected behavior. SparkContext is the entry point for interacting with Spark functionality, and it represents the connection to a Spark cluster. It manages the underlying resources and configurations necessary for Spark applications.**
 
@@ -446,8 +541,11 @@ None of the above
 
 
 4
+
 3
+
 **2**
+
 1
 
 **RDD (Resilient Distributed Dataset) can be created in two ways:**
@@ -460,14 +558,18 @@ None of the above
 
 
 Any number of task
+
 **One**
+
 More than one less than five
+
 
 **Spark runs one task per partition by default. Each partition of an RDD is processed by a single task. However, it's important to note that the number of tasks can be configured and adjusted based on factors such as the cluster's configuration, available resources, and the specific operations being performed. By specifying the number of partitions or using operations like repartition() or coalesce(), the number of tasks can be increased or decreased. So, while the default is one task per partition, it is possible to have more than one task per partition depending on the setup and requirements of the Spark application.**
 
 ## 31.- Can we edit the data of RDD, for example, the case conversion?
 
 Yes
+
 No
 
 **No, we cannot directly edit the data of an RDD in Apache Spark. RDDs are immutable, meaning they cannot be modified once created. However, we can apply transformations to RDDs to create new RDDs with desired modifications or operations.**
@@ -477,9 +579,13 @@ No
 ## 32.- Which of the following is not a transformation?
 
 Flatmap
+
 Map
+
 **Reduce**
+
 Filter
+
 
 **Reduce is not a transformation in Apache Spark. It is an action.**
 
@@ -492,8 +598,11 @@ Filter
 ## 33.- Which of the following is not an action?
 
 collect()
+
 take(n)
+
 top()
+
 **map**
 
 **Actions in Spark are *operations that trigger the execution of transformations and return a result to the driver program or perform some action on the data*. Examples of actions include collect(), which retrieves all elements of an RDD or DataFrame and returns them as an array, take(n), which retrieves the first n elements from an RDD or DataFrame, and top(), which returns the top n elements from an RDD or DataFrame based on a custom ordering.**
@@ -505,6 +614,7 @@ top()
 ## 34.- Does Spark R make use of MLlib in any aspect?
 
 Yes
+
 **No**
 
 **SparkR does not make use of MLlib in any aspect. SparkR is the R package for Apache Spark, which provides an R API to interact with Spark. MLlib, on the other hand, is the machine learning library in Spark, primarily built for Scala and Java. MLlib provides a rich set of machine learning algorithms and tools for data processing and modeling.**
@@ -514,8 +624,11 @@ Yes
 ## 35.- You can connect R program to a Spark cluster from –
 
 RStudio
+
 R Shell
+
 Rscript
+
 **All of the above**
 
 **You can connect an R program to a Spark cluster from RStudio, R Shell, and Rscript. Spark provides the sparklyr package, which allows R users to interact with Spark and leverage its capabilities from within the R environment.**
@@ -526,8 +639,11 @@ Rscript
 ## 36.-  For Multiclass classification problem which algorithm is not the solution?
 
 Naive Bayes
+
 Random Forests
+
 **Logistic Regression**
+
 Decision Trees
 
 **The best answer would be "Naive Bayes." Naive Bayes is typically used for binary classification tasks or problems with discrete input features. It assumes that the features are conditionally independent, which may not hold in more complex multiclass scenarios. In contrast, Random Forests, Logistic Regression, and Decision Trees can all handle multiclass classification problems effectively.**
@@ -535,15 +651,20 @@ Decision Trees
 ## 37.- For Regression problem which algorithm is not the solution?
 
 **Logistic Regression**
+
 Ridge Regression
+
 Decision Trees
+
 Gradient-Boosted Trees
 
 
 ## 38.- Which of the following is true about DataFrame?
 
 DataFrames provide a more user-friendly API than RDDs.
+
 DataFrame API have provision for compile-time type safety
+
 **Both the above**
 
 **Both the statements are true about DataFrame.**
@@ -558,8 +679,11 @@ DataFrame API have provision for compile-time type safety
 ## 39.- Which of the following is a tool of Machine Learning Library?
 
 Persistence
+
 Utilities like linear algebra, statistics
+
 Pipelines
+
 **All of the above**
 
 **All of the above options are tools of the Machine Learning Library (MLlib) in Apache Spark.**
@@ -576,6 +700,7 @@ Pipelines
 ## 40.- Is MLlib deprecated?
 
 Yes
+
 **No**
 
 **Is MLlib deprecated?**
@@ -590,9 +715,13 @@ https://spark.apache.org/docs/latest/ml-guide.html
 ## 41.- Which of the following is false for Apache Spark?
 
 It provides high-level API in Java, Python, R, Scala
+
 It can be integrated with Hadoop and can process existing Hadoop HDFS data
+
 **Spark is an open source framework which is written in Java**
+
 Spark is 100 times faster than Bigdata Hadoop
+
 
 **Apache Spark is primarily implemented in Scala, not Java. While Spark does provide APIs in multiple languages, including Java, Python, R, and Scala, its core implementation is primarily in Scala. Therefore, the statement "Spark is an open-source framework which is written in Java" is false. The correct statement is that Spark is an open-source framework written in Scala.** 
 
@@ -600,8 +729,11 @@ Spark is 100 times faster than Bigdata Hadoop
 ## 42.- Which of the following is true for Spark SQL?
 
 It is the kernel of Spark
+
 Provides an execution platform for all the Spark applications
+
 **It enables users to run SQL / HQL queries on the top of Spark.**
+
 Enables powerful interactive and data analytics application across live streaming data
 
 
@@ -620,9 +752,13 @@ Enables powerful interactive and data analytics application across live streamin
 43.- Which of the following is true for Spark core?
 
 **It is the kernel of Spark**
+
 It enables users to run SQL / HQL queries on the top of Spark.
+
 It is the scalable machine learning library which delivers efficiencies
+
 Improves the performance of iterative algorithm drastically.
+
 
 **Spark Core is the foundational component of Apache Spark, serving as the distributed computing engine and the heart of the Spark framework. It provides the basic functionality and infrastructure for distributed data processing, including task scheduling, memory management, fault tolerance, and communication between different nodes in a Spark cluster.**
 
@@ -641,17 +777,24 @@ Improves the performance of iterative algorithm drastically.
 ## 44.- Which of the following is true for Spark R?
 
 **It allows data scientists to analyze large datasets and interactively run jobs**
+
 It is the kernel of Spark
+
 It is the scalable machine learning library which delivers efficiencies
+
 It enables users to run SQL / HQL queries on the top of Spark.
+
 
 **The true statement for Spark R is that it allows data scientists to analyze large datasets and interactively run jobs using the R programming language. SparkR is an R package that provides an interface for running Spark jobs and performing data analysis on large datasets using the R programming language. It allows data scientists and analysts to leverage the distributed computing power of Apache Spark and perform interactive data analysis, data processing, and machine learning tasks using familiar R syntax and functions. SparkR enables seamless integration of R with Spark and provides access to various Spark features and functionalities.**
 
 ## 45.- Which of the following is true for Spark MLlib?
 
 Provides an execution platform for all the Spark applications
+
 **It is the scalable machine learning library which delivers efficiencies**
+
 enables powerful interactive and data analytics application across live streaming data
+
 All of the above
 
 **Spark MLlib is the machine learning library in Apache Spark that provides a wide range of scalable and distributed machine learning algorithms and utilities. It offers a high-level API for building machine learning pipelines and supports various tasks, including classification, regression, clustering, collaborative filtering, and more. MLlib leverages the distributed computing capabilities of Spark to process large datasets in parallel, delivering efficient and scalable machine learning solutions.**
@@ -660,8 +803,11 @@ All of the above
 
 
 It helps Spark applications to easily run on the command line of the system
+
 It runs/tests application code interactively
+
 It allows reading from many types of data sources
+
 **All of the above**
 
 **Spark Shell is an interactive command-line interface provided by Apache Spark, and all the mentioned options are true for it. Here's a breakdown of each option:**
@@ -677,8 +823,11 @@ It allows reading from many types of data sources
 ## 47.- Which of the following is true for RDD?
 
 We can operate Spark RDDs in parallel with a low-level API
+
 RDDs are similar to the table in a relational database
+
 It allows processing of a large amount of structured data
+
 It has built-in optimization engine
 
 **RDD (Resilient Distributed Dataset) in Apache Spark allows parallel processing of data through a low-level API. RDDs provide a distributed collection of objects that can be processed in parallel across a cluster of machines. Users can perform operations on RDDs using functional transformations like map, filter, and reduce, allowing for efficient and parallel computation.**
@@ -696,6 +845,7 @@ It has built-in optimization engine
 ## 48.- RDD are fault-tolerant and immutable
 
 **True**
+
 False
 
 **RDDs (Resilient Distributed Datasets) in Apache Spark are designed to be fault-tolerant and immutable. Fault-tolerance means that RDDs can recover from failures automatically, ensuring the reliability of data processing. If a node in the cluster fails, RDDs can be reconstructed from lineage information, allowing the computation to continue without data loss.**
@@ -705,7 +855,9 @@ False
 ## 49.- In which of the following cases do we keep the data in-memory?
 
 Iterative algorithms
+
 Interactive data mining tools
+
 **Both the above**
 
 **In Apache Spark, both iterative algorithms and interactive data mining tools can benefit from keeping the data in-memory.**
@@ -719,7 +871,9 @@ Interactive data mining tools
 50.- When does Apache Spark evaluate RDD?
 
 ddddd
+
 Upon transformation
+
 **On both transformation and action**
 
 **Apache Spark evaluates RDD (Resilient Distributed Dataset) upon action.**
@@ -734,8 +888,11 @@ Upon transformation
 ## 51.- The read operation on RDD is
 
 **Fine-grained**
+
 Coarse-grained
+
 Either fine-grained or coarse-grained
+
 Neither fine-grained nor coarse-grained
 
 **The read operation on an RDD (Resilient Distributed Dataset) in the context of Apache Spark is fine-grained. RDDs in Spark are a fundamental data structure that allows for distributed data processing and fault tolerance. *Fine-grained operations refer to the ability to perform transformations and actions on individual elements within an RDD*. These operations are performed in parallel across the distributed nodes in a cluster, enabling efficient and scalable data processing.**
@@ -744,8 +901,11 @@ Neither fine-grained nor coarse-grained
 ## 52.- The write operation on RDD is
 
 Fine-grained
+
 Coarse-grained
+
 **Either fine-grained or coarse-grained**
+
 Neither fine-grained nor coarse-grained
 
 **The write operation on an RDD (Resilient Distributed Dataset) in Apache Spark can be either fine-grained or coarse-grained, depending on the specific operation being performed.**
@@ -781,9 +941,13 @@ No
 ## 54.- Fault Tolerance in RDD is achieved using
 
 **Immutable nature of RDD**
+
 DAG (Directed Acyclic Graph)
+
 Lazy-evaluation
+
 None of the above
+
 
 **Fault tolerance in RDD (Resilient Distributed Dataset) is achieved using the immutable nature of RDDs.**
 
@@ -799,8 +963,11 @@ None of the above
 ## 55.- What is a transformation in Spark RDD?
 
 **Takes RDD as input and produces one or more RDD as output.**
+
 Returns final result of RDD computations.
+
 The ways to send result from executors to the driver
+
 None of the above
 
 A transformation in Spark RDD (Resilient Distributed Dataset) is an operation that takes an RDD as input and produces one or more RDDs as output. Transformations are the core building blocks of Spark's data processing model. They create a new RDD by applying a specific operation or transformation to the elements of the input RDD.
@@ -814,9 +981,13 @@ A transformation in Spark RDD takes an RDD as input and generates one or more RD
 ## 56.-  What is action in Spark RDD?
 
 **The ways to send result from executors to the driver**
+
 Takes RDD as input and produces one or more RDD as output.
+
 Creates one or many new RDDs
+
 **All of the above
+
 
 **Actions in Spark RDD trigger the execution of transformations, create a final result or value,and can save or send the result from the executors to the driver program.**
 
@@ -832,7 +1003,9 @@ Creates one or many new RDDs
 ## 57.- Which of the following is true about narrow transformation –
 
 The data required to compute resides on multiple partitions.
+
 **The data required to compute resides on the single partition.**
+
 Both the above
 
 **Narrow transformations in Spark RDD are operations where the data required to compute the output of the transformation resides within a single partition of the RDD. These transformations do not require shuffling or data exchange between partitions. The computation can be performed locally on each partition without needing to access data from other partitions.**
@@ -844,12 +1017,15 @@ Both the above
 ## 58.- Which of the following is true about wide transformation –
 
 **The data required to compute resides on multiple partitions.**
+
 The data required to compute resides on the single partition.
+
 None of the both
 
 ## 59.- When we want to work with the actual dataset, at that point we use Transformation?
 
 True
+
 **False**
 
 When we want to work with the actual dataset, we use actions, not transformations. Actions are operations in Spark that trigger the execution of the transformations and return a result or value to the driver program. Actions are responsible for initiating the computation on the RDD and producing a concrete result or side effect.
@@ -861,8 +1037,11 @@ To obtain the actual dataset or result of the computation, actions need to be ca
 ## 60.- The shortcomings of Hadoop MapReduce was overcome by Spark RDD by
 
 Lazy-evaluation
+
 DAG
+
 In-memory processing
+
 **All of the above**
 
 **Spark RDD (Resilient Distributed Dataset) overcomes the shortcomings of Hadoop MapReduce by incorporating various features, including lazy evaluation, DAG (Directed Acyclic Graph), and in-memory processing.**
@@ -878,8 +1057,11 @@ In-memory processing
 ## 61.- What does Spark Engine do?
 
 Scheduling
+
 Distributing data across a cluster
+
 Monitoring data across a cluster
+
 **All of the above**
 
 **The Spark engine is responsible for performing various tasks within the Apache Spark framework, including scheduling, distributing data across a cluster, and monitoring data across a cluster.**
@@ -894,6 +1076,7 @@ Monitoring data across a cluster
 ## 62.- Caching is optimizing the technique
 
 **True**
+
 False
 
 
@@ -906,7 +1089,9 @@ False
 ## 63.- Which of the following is the entry point of Spark Application –
 
 **SparkSession**
+
 SparkContext
+
 None of the both
 
 **SparkSession is the primary entry point for Spark functionality and replaces the older entry point, SparkContext. It provides a unified interface for interacting with Spark and enables you to work with various Spark features, such as DataFrame API, Dataset API, Spark SQL, and Spark Streaming.**
@@ -916,6 +1101,7 @@ None of the both
 ## 64.- SparkContext guides how to access the Spark cluster.
 
 **True**
+
 False
 
 **SparkContext is the entry point for accessing the Spark cluster. It represents the connection to a Spark cluster and provides the necessary APIs to interact with the cluster. It allows you to configure various cluster-level settings, create RDDs (Resilient Distributed Datasets), and perform distributed computations on the cluster.**
@@ -926,6 +1112,7 @@ False
 ## 65.- Which of the following is the entry point of Spark SQL?
 
 **SparkSession**
+
 SparkContext
 
 **The entry point of Spark SQL is the SparkSession.**
@@ -939,8 +1126,11 @@ SparkContext
 ## 66.- Which of the following is open-source?
 
 Apache Spark
+
 Apache Hadoop
+
 Apache Flink
+
 **All of the above**
 
 **Apache Spark, Apache Hadoop, and Apache Flink, are open-source projects. Apache is an open-source software foundation that supports the development of various software projects. These 3 projects are designed for big data processing and analytics, offering features such as distributed storage, distributed processing, stream processing, and batch processing. They have gained popularity for their scalability, fault-tolerance, and wide range of data processing capabilities.**
@@ -948,17 +1138,23 @@ Apache Flink
 ## 67.- Apache Spark supports –
 
 Batch processing
+
 Stream processing
+
 Graph processing
+
 **All of the above**
 
 **Apache Spark supports batch processing, stream processing, and graph processing. Apache Spark is a versatile and powerful distributed computing framework that provides APIs and libraries for processing large-scale data in various scenarios. It allows users to perform batch computations on large datasets, process real-time streaming data, and perform graph-based computations for graph analytics tasks. This flexibility makes Spark a popular choice for a wide range of data processing and analytics applications.**
 
-68.- Which of the following is not true for map() Operation?
+## 68.- Which of the following is not true for map() Operation?
 
 Map transforms an RDD of length N into another RDD of length N.
+
 In the Map operation developer can define his own custom business logic.
+
 It applies to each element of RDD and it returns the result as new RDD
+
 **Map allows returning 0, 1 or more elements from map function.**
 
 **In Spark's map() operation, each element of the RDD is transformed using the provided function, and *the result is a new RDD with the same number of elements as the original RDD*. The map() operation *applies the function to each element and produces a one-to-one mapping. It does not allow returning zero or more elements from the map function*.**
@@ -967,7 +1163,9 @@ It applies to each element of RDD and it returns the result as new RDD
 ## N and M.   a) N>M   b) N<M   c) N<=M
 
 Either a or b
+
 Either b or c
+
 **Either a or c**
 
 **In the case of flatMap transformation, the resulting RDD can have a different length than the original RDD. It depends on the logic implemented in the flatMap function. It is possible for the resulting RDD to have more elements (N > M), or it could have fewer elements (N < M), or in some cases, it could have the same number of elements (N = M). Therefore, either option a) or c) could be true for the relationship between N and M.**
@@ -975,8 +1173,11 @@ Either b or c
 ## 70.- Which of the following is a transformation?
 
 take(n)
+
 top()
+
 countByValue()
+
 **mapPartitionWithIndex()**
 
 **Transformations in Apache Spark are operations that produce a new RDD or DataFrame from an existing one. They are lazily evaluated, meaning the execution is deferred until an action is called.**
@@ -986,8 +1187,11 @@ countByValue()
 ## 71.- Which of the following is action?
 
 Union(dataset)
+
 Intersection(other-dataset)
+
 Distinct()
+
 **CountByValue()**
 
 **CountByValue() is an action. Actions in Apache Spark are operations that trigger the execution of transformations and return a result to the driver program or write data to an external storage system. Unlike transformations, actions cause the evaluation of the RDD or DataFrame and produce a result or a side effect.**
@@ -997,6 +1201,7 @@ Distinct()
 ## 72.- In aggregate function can we get the data type different from as that input data type?
 
 **Yes**
+
 No
 
 **In the aggregate function of Apache Spark, it is possible to get a result with a different data type than the input data type.**
@@ -1008,8 +1213,11 @@ No
 ## 73.- In which of the following Action the result is not returned to the driver.
 
 collect()
+
 top()
+
 countByValue()
+
 **foreach()**
 
 **The foreach() action applies a function to each element of an RDD or DataFrame without returning any result to the driver program. It is commonly used for performing side effects such as writing the elements to an external system or updating shared variables.**
@@ -1019,8 +1227,11 @@ countByValue()
 ## 74.- Which of the following is true for stateless transformation?
 
 Uses data or intermediate results from previous batches and computes the result of the current batch.
+
 Windowed operations and updateStateByKey() are two type of Stateless transformation.
+
 **The processing of each batch has no dependency on the data of previous batches.**
+
 None of the above
 
 **Stateless transformations in Apache Spark do not use data or intermediate results from previous batches to compute the result of the current batch. Each batch is processed independently, without any dependency on the data processed in previous batches. Examples of stateless transformations include map(), filter(), and flatMap(), where the output for each input element is solely determined by the input element itself.**
@@ -1031,8 +1242,11 @@ None of the above
 ## 75.- Which of the following is true for stateful transformation?
 
 The processing of each batch has no dependency on the data of previous batches.
+
 **Uses data or intermediate results from previous batches and computes the result of the current batch.**
+
 Stateful transformations are simple RDD transformations.
+
 None of the above
 
 **Stateful transformations in Apache Spark utilize data or intermediate results from previous batches to compute the result of the current batch. These transformations maintain some form of state or context across multiple batches to perform computations that require information from previous batches. Examples of stateful transformations include windowed operations, such as reduceByKeyAndWindow() and updateStateByKey(), where the processing of each batch considers the data processed in previous batches.**
@@ -1040,17 +1254,24 @@ None of the above
 ## 76.- The primary Machine Learning API for Spark is now the _____ based API
 
 **DataFrame**
+
 Dataset
+
 RDD
+
 All of the above
+
 
 Apache Spark provides multiple APIs for machine learning, including RDD-based API, DataFrame-based API, and Dataset-based API. However, the DataFrame-based API has become the primary API for machine learning in Spark, offering a more user-friendly and efficient way to perform machine learning tasks. It leverages the structured data processing capabilities of DataFrames and benefits from the optimizations provided by Spark's Catalyst query optimizer.
 
 ## 77.- Which of the following is a module for Structured data processing?
 
 GraphX
+
 MLlib
+
 **Spark SQL**
+
 Spark R
 
 **Spark SQL provides a programming interface for querying structured and semi-structured data using SQL, as well as a DataFrame API for working with structured data in a more programmatic way. It allows users to execute SQL queries, access various data sources, and perform data manipulation operations on structured data. Spark SQL integrates with other Spark modules like MLlib and GraphX, enabling seamless integration of structured data processing with machine learning and graph analytics.**
@@ -1058,8 +1279,11 @@ Spark R
 ## 78.- SparkSQL translates commands into codes. These codes are processed by
 
 Driver nodes
+
 **Executor Nodes**
+
 Cluster manager
+
 None of the above
 
 **SparkSQL translates commands into codes that are processed by Executor Nodes. In Spark, the Driver program is responsible for parsing and optimizing the SparkSQL commands and generating an execution plan. *The generated execution plan is then sent to the Executor Nodes, which are responsible for executing the tasks in parallel on the cluster. Each Executor Node processes a subset of the data and performs the required operations as per the execution plan. The results are then combined and returned to the Driver program for further processing or output*. The Cluster Manager, on the other hand, is responsible for managing the allocation of resources and scheduling tasks across the cluster, but it does not directly process the SQL commands.**
@@ -1067,6 +1291,7 @@ None of the above
 ## 79.- Spark SQL plays the main role in the optimization of queries.
 
 **True**
+
 False
 
 **Spark SQL plays a crucial role in the optimization of queries. It includes an advanced optimizer that analyzes the query plans, applies various optimization techniques, and generates an optimized execution plan. This optimization process helps to improve the performance of SQL queries by minimizing the amount of data shuffled, reducing the number of operations, and leveraging various optimization strategies. By optimizing the queries, Spark SQL aims to execute them efficiently and provide faster query processing times.**
@@ -1074,8 +1299,9 @@ False
 ## 80.- This optimizer is based on functional programming construct in
 
 Java
-**Scala**
-Python
-R
 
-**The optimizer in Spark SQL is primarily based on functional programming constructs in Scala. Scala is the programming language in which Apache Spark is implemented, and it offers powerful functional programming capabilities. Spark SQL leverages these constructs to perform query optimization, such as applying predicate pushdown, join reordering, and expression simplification. The functional programming paradigm in Scala allows for concise and expressive code, which contributes to the efficiency and effectiveness of the optimization process in Spark SQL.**
+**Scala**
+
+Python
+
+R
