@@ -609,13 +609,10 @@ top()
 
 ## 34.- Does Spark R make use of MLlib in any aspect?
 
-Yes
+**Yes**
 
-**No**
+No
 
-**SparkR does not make use of MLlib in any aspect. SparkR is the R package for Apache Spark, which provides an R API to interact with Spark. MLlib, on the other hand, is the machine learning library in Spark, primarily built for Scala and Java. MLlib provides a rich set of machine learning algorithms and tools for data processing and modeling.**
-
-**While MLlib is not directly accessible through SparkR, SparkR does provide its own set of machine learning functions and algorithms, allowing R users to perform data analysis and machine learning tasks within the SparkR environment.**
 
 ## 35.- You can connect R program to a Spark cluster from –
 
