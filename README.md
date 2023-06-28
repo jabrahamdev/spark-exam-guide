@@ -1298,3 +1298,413 @@ Java
 Python
 
 R
+
+**The optimizer in Spark SQL is primarily based on functional programming constructs in Scala. Scala is the programming language in which Apache Spark is implemented, and it offers powerful functional programming capabilities. Spark SQL leverages these constructs to perform query optimization, such as applying predicate pushdown, join reordering, and expression simplification. The functional programming paradigm in Scala allows for concise and expressive code, which contributes to the efficiency and effectiveness of the optimization process in Spark SQL.**
+
+## 81.- Catalyst Optimizer supports either rule-based or cost-based optimization.
+
+**True**
+
+False
+
+**The Catalyst Optimizer in Apache Spark supports both rule-based and cost-based optimization techniques. The rule-based optimization involves applying a set of predefined rules to transform and optimize query plans. These rules are designed to perform common query optimizations such as predicate pushdown, projection pruning, and join reordering. On the other hand, the cost-based optimization uses statistical information about the data and execution costs to estimate the most efficient query plan. By considering factors like data distribution, data size, and resource availability, the cost-based optimizer can make more informed decisions to optimize query execution. The combination of rule-based and cost-based optimizations in the Catalyst Optimizer helps Spark generate efficient query plans and improve overall performance.**
+
+## 82.- Which of the following is not true for Catalyst Optimizer?
+
+Catalyst optimizer makes use of pattern matching feature.
+
+Catalyst contains the tree and the set of rulesto manipulate the tree.
+
+**There are no specific libraries to process relational queries.**
+
+There are different rule sets which handle different phases of query.
+
+**The statement "There are no specific libraries to process relational queries" is not true for Catalyst Optimizer. Catalyst includes specific libraries and components that are dedicated to processing relational queries. It provides a comprehensive framework for analyzing, optimizing, and executing relational queries in Spark SQL. The Catalyst Optimizer employs various techniques, such as rule-based and cost-based optimizations, to transform and optimize query plans for efficient execution. It leverages pattern matching capabilities to match and apply transformation rules to the query tree. Additionally, Catalyst incorporates different rule sets that handle different phases of query optimization, allowing for modular and customizable optimizations.**
+
+
+## 83.- Which of the following is true for the tree in Catalyst optimizer?
+
+A tree is the main data type in the catalyst.
+
+New nodes are defined as subclasses of TreeNode class.
+
+A tree contains a node object.
+
+**All of the above**
+
+**All of the statements are true for the tree in Catalyst optimizer.**
+
+**A tree is indeed the main data type in Catalyst optimizer, representing the logical and physical plans of queries. It provides a hierarchical structure to represent the query execution plan.**
+
+**New nodes in the tree are defined as subclasses of the TreeNode class. Catalyst uses a rich set of node types to represent various operations and expressions in the query plan. Each node subclass encapsulates specific functionality and properties.**
+
+**A tree in Catalyst optimizer consists of multiple nodes, forming a hierarchical structure. Each node represents an operation or expression in the query plan, and the tree structure defines the relationships and dependencies between these nodes.**
+
+
+## 84.- Which of the following is true for the rule in Catalyst optimizer?
+
+We can manipulate tree using rules.
+
+We can define rules as a function from one tree to another tree.
+
+Using rule we get the pattern that matches each pattern to a result.
+
+**All of the above**
+
+**All of the statements are true for the rules in Catalyst optimizer.**
+
+**Rules play a crucial role in the optimization process of Catalyst optimizer. They are used to manipulate the query plan tree by applying transformations and optimizations.**
+
+**We can indeed manipulate the tree using rules. Each rule is designed to perform a specific transformation or optimization on the query plan tree.**
+
+**Rules in Catalyst optimizer are defined as functions from one tree to another tree. They take a specific pattern or structure in the tree as input and apply the necessary transformations to produce a new tree.**
+
+**Using rules, we can match patterns in the query plan tree and apply the corresponding transformations. By defining rules for different patterns, Catalyst optimizer can systematically optimize the query plan by replacing sub-trees with more efficient alternatives.**
+
+## 85.- Which of the following is not a Spark SQL query execution phases? ***
+
+Analysis
+
+Logical Optimization
+
+**Execution**
+
+Physical planning
+
+
+## 86.- In Spark SQL optimization which of the following is not present in the logical plan –
+
+Constant folding
+
+**Abstract syntax tree**
+
+Projection pruning
+
+Predicate pushdown
+
+
+
+**Abstract syntax tree is not present in the logical plan of Spark SQL optimization.**
+
+
+## 87.- In the analysis phase which is the correct order of execution after forming unresolved logical plan.     ***  
+                             
+                             a. Search relation BY NAME FROM CATALOG. 
+
+                             b.Determine which attributes match to the same value to give them unique ID.     
+
+                             c. Map the name attribute     
+
+                             d. Propagate and push type through expressions
+
+
+abcd
+
+**acbd**
+
+adbc
+
+dcab
+
+
+
+## 88.- The Physical planning phase of Query optimization we can use both Coast-based and Rule-based optimization. ***
+
+True
+
+**False**
+
+**In the Physical planning phase of query optimization in Spark SQL, only rule-based optimization is used. Cost-based optimization is not utilized in the physical planning phase.**
+
+
+## 89.- DataFrame in Apache Spark prevails over RDD and does not contain any feature of RDD.
+
+True
+
+**False**
+
+**DataFrames in Apache Spark are built on top of RDDs (Resilient Distributed Datasets) and provide a higher-level API for structured data processing. DataFrames retain many features of RDDs, such as distributed computing and fault tolerance. DataFrames offer additional optimizations and optimizations for structured data processing, such as schema enforcement, query optimization, and Catalyst optimizer. Therefore, DataFrames in Apache Spark build upon and enhance the capabilities of RDDs.**
+
+
+## 90.- Which of the following are the common feature of RDD and DataFrame?
+
+Immutability
+
+In-memory
+
+Resilient
+
+**All of the above**
+
+**(Immutability, In-memory, Resilient) are common to both RDD (Resilient Distributed Dataset) and DataFrame in Apache Spark.**
+
+
+## 91.- Which of the following is not true for DataFrame?
+
+**DataFrame in Apache Spark is behind RDD**
+
+We can build DataFrame from different data sources. structured data file, tables in Hive
+
+The Application Programming Interface (APIs) of DataFrame is available in various languages
+
+Both in Scala and Java, we represent DataFrame as Dataset of rows.
+
+**The statement "DataFrame in Apache Spark is behind RDD" is not true. DataFrames are a higher-level abstraction built on top of RDDs, providing a more user-friendly API for structured data processing.**
+
+
+## 92.- In Dataframe in Spark Once the domain object is converted into a data frame, the regeneration of domain object is not possible.
+
+**True**
+
+False
+
+**Once a domain object is converted into a DataFrame in Spark, it loses its original structure and is transformed into a tabular format. This transformation is irreversible, and the original domain object cannot be regenerated directly from the DataFrame.**
+
+## 93.- DataFrame API has provision for compile-time type safety.
+
+True
+
+**False**
+
+**The DataFrame API in Spark does not provide compile-time type safety. Unlike strongly typed programming languages like Scala and Java, the DataFrame API in Spark is dynamically typed. It operates on a schema-aware structure, but the type safety is not enforced at compile-time.**
+
+
+## 94.- We can create DataFrame using:
+
+Tables in Hive
+
+Structured data files
+
+External databases
+
+**All of the above**
+
+**All of the above options can be used to create a DataFrame in Spark. DataFrame can be created from various data sources such as tables in Hive, structured data files (e.g., CSV, JSON, Parquet), and external databases (e.g., MySQL, PostgreSQL) using the appropriate APIs and connectors provided by Spark.**
+
+
+## 95.- Which of the following is the fundamental data structure of Spark
+
+**RDD**
+
+DataFrame
+
+Dataset
+
+None of the above
+
+
+**The fundamental data structure of Spark is RDD (Resilient Distributed Dataset). RDDs are immutable distributed collections of objects that can be processed in parallel across a cluster. They provide fault tolerance and are the building blocks of data processing in Spark. While DataFrame and Dataset are higher-level abstractions introduced in Spark to provide more structured and optimized data processing capabilities, RDDs remain a fundamental and versatile data structure in Spark.**
+
+
+## 96.-  Which of the following provide the object-oriented programming interface
+
+RDD
+
+DataFrame
+
+**Dataset**
+
+None of the above
+
+**The object-oriented programming interface in Apache Spark is provided by the Dataset API. Datasets are a higher-level abstraction introduced in Spark that provide a strongly-typed, object-oriented programming interface. Datasets are built on top of RDDs and combine the benefits of RDDs (such as distributed processing and fault tolerance) with the benefits of structured data processing (such as compile-time type safety and optimized execution). DataFrame, on the other hand, is a distributed collection of data organized into named columns and provides a more relational query-like interface. RDDs also support an object-oriented programming style, but they do not have the same level of type safety and optimization features as Datasets.**
+
+
+## 97.- After transforming into DataFrame one cannot regenerate a domain object
+
+**True**
+
+False
+
+**Once data is transformed into a DataFrame in Apache Spark, it is represented as a structured collection of data organized into named columns. The DataFrame is an abstraction that provides a high-level interface for manipulating and querying data. However, the DataFrame does not retain the original domain object structure or semantics. It is a schema-based representation that allows efficient processing and optimization of data operations. Therefore, once the data is transformed into a DataFrame, it cannot be easily regenerated into the original domain object without additional transformations or conversions.**
+
+
+## 98.- RDD allows Java serialization
+
+**True**
+
+False
+
+**True. RDD (Resilient Distributed Dataset) in Apache Spark allows Java serialization. Java serialization is one of the default serialization formats supported by Spark for serializing the data within RDDs. However, Spark also provides support for other serialization formats like Kryo, which is known for its faster serialization and smaller object size. Nonetheless, Java serialization is still a valid option when working with RDDs in Spark.**
+
+## 99.- Which of the following make use of an encoder for serialization.
+
+RDD
+
+DataFrame
+
+**Dataset**
+
+None of the above
+
+**The correct answer is Dataset. Datasets in Apache Spark make use of an encoder for serialization. Encoders are a feature of Datasets that allow for efficient serialization and deserialization of data. They provide a way to convert between JVM objects and Spark internal binary format, enabling better performance compared to traditional Java serialization or Kryo serialization used by RDDs. DataFrames, on the other hand, do not use encoders directly, but Datasets can be easily converted to DataFrames if needed.**
+
+
+## 100.- Apache Spark is presently added in all major distribution of Hadoop
+
+**True**
+
+False
+
+**True. Apache Spark is commonly included in major distributions of Hadoop, such as Cloudera, Hortonworks, and MapR. Spark can be seamlessly integrated with Hadoop ecosystems, leveraging Hadoop's distributed file system (HDFS) and resource management frameworks like YARN or Apache Mesos. This allows Spark to take advantage of the scalability, fault tolerance, and data processing capabilities of Hadoop.**
+
+## 101.- Does Dataset API support Python and R.
+
+Yes
+
+**No**
+
+**No. The Dataset API in Apache Spark is primarily designed for use with Scala and Java programming languages. While Spark supports Python and R through the PySpark and SparkR APIs, the Dataset API is not available directly in Python or R. Instead, Python users can work with DataFrames, which provide similar functionality to Datasets, while R users can work with SparkR DataFrames.**
+
+
+## 102.- Which of the following is slow to perform simple grouping and aggregation operations.
+
+**RDD**
+
+DataFrame
+
+Dataset
+
+All of the above
+
+**RDD (Resilient Distributed Dataset) in Apache Spark is a low-level data structure that provides resilience and fault tolerance but lacks built-in optimization for querying and aggregation operations. RDDs require more manual coding and are generally slower for performing simple grouping and aggregation operations compared to DataFrames and Datasets, which offer higher-level abstractions and optimization techniques. DataFrame and Dataset APIs provide more efficient execution plans and optimizations for common data manipulation tasks like grouping and aggregation.**
+
+
+## 103.- Which of the following is good for low-level transformation and actions.
+
+**RDD**
+
+DataFrame
+
+Dataset
+
+All of the above
+
+**RDD in Apache Spark is a low-level data structure that provides a distributed collection of data objects. RDDs allow for low-level transformations and actions, providing more control and flexibility in data processing operations. RDDs are suitable for scenarios where fine-grained control is required, such as custom algorithms or specialized data processing tasks. However, DataFrame and Dataset APIs provide higher-level abstractions that are generally more efficient and convenient for common data manipulation tasks, offering optimized execution plans and built-in optimizations for query processing.**
+
+
+## 104.- Which of the following technology is good for Stream technology?
+
+Apache Spark
+
+Apache Hadoop
+
+**Apache Flink**
+
+None of the above
+
+**Apache Flink is a powerful stream processing framework designed for high-throughput, low-latency, and fault-tolerant stream processing of big data. It provides advanced capabilities for processing continuous streams of data with support for event time processing, windowing, stateful computations, and fault tolerance. Apache Spark, on the other hand, is primarily a batch processing and real-time analytics framework, although it does have some support for streaming data processing through its structured streaming module. Apache Hadoop is a distributed processing framework that primarily focuses on batch processing and storage of large datasets, rather than real-time stream processing.**
+
+## 105.- Which of the following is not true for Apache Spark Execution?
+
+To simplify working with structured data it provides DataFrame abstraction in Python, Java, and Scala.
+
+The data can be read and written in a variety of structured formats. For example, JSON, Hive Tables, and Parquet.
+
+**Using SQL we can query data,only from inside a Spark program and not from external tools.**
+
+The best way to use Spark SQL is inside a Spark application. This empowers us to load data and query it with SQL.
+
+**"Using SQL we can query data, only from inside a Spark program and not from external tools" is not true for Apache Spark Execution. Apache Spark allows us to use SQL to query data both from inside a Spark program and from external tools. Spark provides a SQL interface that can be used to run SQL queries directly on DataFrames or temporary views created from the data. This allows users to leverage their SQL skills and tools to interact with Spark data efficiently.**
+
+## 106.- When SQL run from the other programming language the result will be  ***
+
+DataFrame
+
+DataSet
+
+**Either DataFrame or Dataset**
+
+Neither DataFrame nor Dataset
+
+
+## 107.- The Dataset API is accessible in
+
+**Java and Scala**
+
+Java, Scala and python
+
+Scala and Python
+
+Scala and R
+
+
+## 108.- Dataset API is not supported by Python. But because of the dynamic nature of Python, many benefits of Dataset API are available.
+
+True
+
+**False**
+
+## 109.- Which of the following is true for Catalyst optimizer?
+
+**The optimizer helps us to run queries much faster than their counter RDD part.**
+
+The optimizer helps us to run queries little faster than their counter RDD part.
+
+The optimizer helps us to run queries in the same speed as their counter RDD part.
+
+
+## 110.- Which of the following organized a data into a named column?  
+
+a. RDD  b. DataFrame  c. Dataset
+
+**Both a and b**
+Both b and c
+Both a and c
+
+**The correct answer is option a. Both a. RDD and b. DataFrame. RDDs can be transformed into DataFrames, which provide a structured and named columnar format for organizing data.**
+
+## 111.- Which of the following are uses of Apache Spark SQL?
+
+It executes SQL queries.
+
+We can read data from existing Hive installation using SparkSQL.
+
+When we run SQL within another programming language we will get the result as Dataset/DataFrame.
+
+**All of the above**
+
+**"All of the above." Apache Spark SQL allows you to execute SQL queries, read data from existing Hive installations using SparkSQL, and retrieve the result as a Dataset or DataFrame when running SQL within another programming language.**
+
+## 112.- With the help of Spark SQL, we can query structured data as a distributed dataset (RDD).
+
+True
+
+**False**
+
+**False. With the help of Spark SQL, we can query structured data as a distributed Dataset or DataFrame, not as an RDD. Spark SQL provides a higher-level interface that allows for more efficient and optimized querying of structured data.**
+
+## 113.- Spark SQL can connect through JDBC or ODBC.
+
+**True**
+
+False
+
+**True. Spark SQL provides connectivity options through JDBC (Java Database Connectivity) and ODBC (Open Database Connectivity), allowing users to connect to various external data sources and query them using Spark SQL.**
+
+## 114.- Using Spark SQL, we can create or read a table containing union fields.
+
+True
+
+**False**
+
+**In Spark SQL, the concept of union fields is not supported. Union fields refer to combining multiple tables or datasets with potentially different column structures. While Spark SQL allows performing operations like union and unionAll to combine tables or datasets, the column structures must match. If the column structures are different, you may need to perform data transformation or schema alignment before performing the union operation.**
+
+## 115.- Which of the following is true for Spark SQL? (false??)  ***
+
+Hive transactions are not supported by Spark SQL.
+
+No support for time-stamp in Avro table.
+
+Even if the inserted value exceeds the size limit, no error will occur.
+
+**All of the above(*)**
+
+
+NOTA: Si la pregunta dijera cual de las siguientes es falsa entonces si la respuesta serìa
+
+**None of the statements is true for Spark SQL.**
+
+**Spark SQL does support Hive transactions, allowing you to perform ACID (Atomicity, Consistency, Isolation, Durability) operations on data stored in Hive tables.Spark SQL supports timestamps in Avro tables.**
+**Timestamps can be stored and queried in Avro data using Spark SQL. If the inserted value exceeds the size limit, an error will occur based on the data type and column constraints defined in the table schema. Spark SQL enforces data type validation and integrity constraints during data insertion.**
+**Therefore, none of the options presented is correct.**
+
